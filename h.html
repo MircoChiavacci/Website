@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="it" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link type="text/css" rel="stylesheet" href="css.css">
+    <meta charset="utf-8">
+    <script src="js.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Washington Post - Breaking news</title>
+    <link rel="icon" type="image/png" href="img/squarelogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    <body>
+
+    <!-- Header -->
+
+    <header>
+
+        <!-- Navbar -->
+
+        <div class="navbar">
+            <div class="navbar-left">
+
+
+
+                <button onclick="toggleDiv()" class="search-menu">
+
+                    <svg viewBox="0 0 16 16"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="currentColor"
+                         aria-hidden="true"
+                         focusable="false" role="img">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M7 3H2v1h5V3Zm2 9H2v1h7v-1ZM2 7.5h4v1H2v-1Zm9.561 1.126a2.333 2.333 0 1 0-1.596-4.385 2.333 2.333 0 0 0 1.596 4.385Zm2.335-3.332a3.334 3.334 0 0 1-1.585 4.093l1.15 3.16-.94.341-1.155-3.175a3.334 3.334 0 1 1 2.53-4.42Z"
+                              fill="currentColor">
+                        </path>
+                    </svg>
+                </button>
+
+                    <a class="bell">
+                        <svg viewBox="0 0 16 16"
+                             fill="currentColor"
+                             aria-hidden="true" focusable="false" role="img" >
+                            <path d="M7 3a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z" fill="currentColor">
+                            </path>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M2.32 12c-.178.608-.32 1-.32 1h12s-.142-.392-.32-1c-.292-1.004-.68-2.6-.68-4 0-2.761-1.686-5-5-5S3 5.239 3 8c0 1.4-.388 2.996-.68 4Zm1.04 0h9.28c-.035-.13-.072-.265-.108-.407C12.274 10.595 12 9.25 12 8c0-1.182-.36-2.173-.992-2.857C10.388 4.471 9.418 4 8 4c-1.419 0-2.388.471-3.008 1.143C4.36 5.827 4 6.818 4 8c0 1.25-.274 2.595-.532 3.593-.036.142-.073.278-.109.407Z"
+                                  fill="currentColor">
+                            </path>
+                            <path d="M6 13a2 2 0 1 0 4 0H9a1 1 0 1 1-2 0H6Z" fill="currentColor">
+                            </path>
+                        </svg>
+                    </a>
+
+
+                <div class="navbar-left-links">
+                    <a href="#">Politics</a>
+                    <a href="#">Opinions</a>
+                    <a href="#">War in Ukraine</a>
+                    <a href="#">Investigations</a>
+                    <a href="#">Climate</a>
+                    <a id ="well-being" href="#">Well+Being</a>
+                    <a id = "tech" href="#">Tech</a>
+                    <a id = "lifestyle" href="#">Lifestyle</a>
+                    <a id = "world" href="#">World</a>
+                    <a id = "md-e-va" href="#">D.C., Md. & Va.</a>
+                    <a id="sports" href="#">Sports</a>
+                </div>
+                <img id = "logo-icon-left" src="img/squarelogo.png"  alt="icon_logo">
+                <img id = "logo-small-left" src="img/The_Washington_Post_logo_black.png"  alt="logo_small">
+            </div>
+
+            <div class="navbar-center">
+                <img id = "logo-small" src="img/The_Washington_Post_logo_black.png"  alt="logo_small">
+                <div id = "text-under-logo-small">Democracy Dies in Darkness</div>
+            </div>
+            <div class="navbar-right">
+                        <span class="subscribe">
+                            <a class="subscribe-link" href="#">Subscribe</a>
+                        </span>
+                <a class="sign-in-link" href="#">Sign in</a>
+            </div>
+        </div>
+
+
+    </header>
+
+        <!-- Sidebar -->
+
+        <div id = "sidebar-left" class ="show">
+
+            <div class = "sidebar-element-button">
+
+
+                        <a class="subscribe-link-sidebar" href="#">Subscribe</a>
+
+
+            </div>
+
+            <div class = "sidebar-element-search">
+
+                <form action="" class ="search-bar">
+
+                    <input type="text" placeholder="Search" name = "q">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+
+                </form>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">Home Page</a>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">Politics</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-jtAjge "><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path></svg>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">Opinions</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+            </svg>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">War in Ukraine</a>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">Investigations</a>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">Climate</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+            </svg>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">Well+being</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+            </svg>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">Tech</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+            </svg>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">Lifestyle</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+            </svg>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">Word</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+            </svg>
+
+            </div>
+
+
+            <div class = "sidebar-element">
+
+                <a href="#">D.C:, Md. & Va.</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+            </svg>
+
+            </div>
+
+            <div class = "sidebar-element">
+
+                <a href="#">Sport</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+            </svg>
+
+            </div>
+
+
+        </div>
+
+
+
+    <div class="all">
+
+    <!--Menu-->
+
+
+    <!--sideBar-->
+
+
+
+
+    <!-- Main content -->
+
+
+
+        <div>
+            <img class="logo" src="img/logo.png" alt="logo">
+        </div>
+        <div class="text-under-logo">
+            Democracy Dies in Darkness
+        </div>
+
+        <img class = "advertisement" src="img/advertisment.jpg" alt="advertisement">
+
+        <!-- Main article -->
+
+
+    <div class = "container-main-and-link-table">
+
+        <div class = "main-article-container">
+
+            <section class = "main-article">
+
+                <div class = "main-type-article"> <a href="#"> THE SBRUGNA LEAKS </a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+                </svg>
+                </div>
+
+                <div class = "row-articles">
+
+                    <div class = "column-articles">
+
+                        <h1 class = "main-article-title1"> <a href="#"> Clarence Thomas has for years claimed income from a defunct real estate firm. </a></h1>
+                        <p class = "text-under-titles-articles"> The misstatements are part of a pattern that has raised questions about how the justice views his obligation to report details about his finances to the public. </p>
+                        <div class = "author"> By <a href="#"> Carol D. Leonnig, Josh Dawsey and Shane Harris </a>- 46 minutes ago</div>
+
+                    </div>
+
+                    <div class ="line-article"></div>
+
+                    <div class = "column-articles">
+                        <img class = "main-article-img" src="https://via.placeholder.com/496x331" alt="article_img">
+                        <p class = "caption">(Jonathan newton / The Post)</p>
+                        <h2 class = "article-title"> <a href="#">Clarence Thomas has for years claimed income from a defunct real estate firm.</a></h2>
+                        <div class = "author"> By <a href="#"> Carol D. Leonnig, Josh Dawsey and Shane Harris</a></div>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class = "main-article">
+
+                <div class = "main-type-article"></div>
+
+                <div class = "row-articles">
+
+                    <div class = "column-articles">
+
+                        <h1 class = "main-article-title2"> <a href="#"> Clarence Thomas has for years claimed income from a defunct real estate firm.</a></h1>
+                        <p class = "text-under-titles-articles"> The misstatements are part of a pattern that has raised questions about how the justice views his obligation to report details about his finances to the public. </p>
+                        <div class = "author"> By <a href="#"> Carol D. Leonnig, Josh Dawsey and Shane Harris  </a>- 10 minutes ago</div>
+
+                    </div>
+
+
+
+                    <div class = "column-articles">
+                        <img class = "main-article-img" src="https://via.placeholder.com/496x331" alt="article_img">
+                        <p class = "caption">(Jonathan newton / The Post)</p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class = "main-article">
+
+                <div class = "main-type-article"></div>
+
+                <div class = "row-articles">
+
+                    <div class = "column-articles">
+
+                        <h1 class = "main-article-title2"> <a href="#"> Clarence Thomas has for years claimed income from a defunct real estate firm. </a></h1>
+                        <p class = "text-under-titles-articles"> The misstatements are part of a pattern that has raised questions about how the justice views his obligation to report details about his finances to the public. </p>
+                        <div class = "author"> By <a href="#"> Carol D. Leonnig, Josh Dawsey and Shane Harris </a>- 46 minutes ago</div>
+
+                    </div>
+
+
+
+                    <div class = "column-articles">
+                        <img class = "main-article-img" src="https://via.placeholder.com/496x331" alt="article_img">
+                        <p class = "caption">(Jonathan newton / The Post)</p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+            <section class = "main-article">
+
+                <div class = "main-type-article"></div>
+
+                <div class = "row-articles">
+
+                    <div class = "column-articles">
+
+                        <h1 class = "main-article-title2"> <a href="#"> Clarence Thomas has for years claimed income from a defunct real estate firm. </a></h1>
+                        <p class = "text-under-titles-articles"> The misstatements are part of a pattern that has raised questions about how the justice views his obligation to report details about his finances to the public. </p>
+                        <div class = "author"> By <a href="#"> Carol D. Leonnig, Josh Dawsey and Shane Harris </a>- 46 minutes ago</div>
+
+                    </div>
+
+
+
+                    <div class = "column-articles">
+                        <img class = "main-article-img" src="https://via.placeholder.com/496x331" alt="article_img">
+                        <p class = "caption">(Jonathan newton / The Post)</p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+        </div>
+
+        <div class = "line-article2-main-content"> </div>
+
+        <!-- Link table -->
+
+            <section class = link-table>
+
+                <div class = "link-table-type"> <a href="#"> OPINIONS </a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+                </svg></div>
+
+                <div class = "row-articles-link-table">
+                    <div class = "column-articles-table">
+                        <h3 class = "link-table-title"> <a href ="#">The Weeknd on Tour.</a></h3>
+                        <div class = "author-link-table">Opinion by<a href="#"> Virtuoso</a></div>
+                    </div>
+
+                    <div class = "column-articles-table">
+                        <img class = "link-table-img" src="https://via.placeholder.com/64x64" alt="link_table_article_img">
+                    </div>
+                </div>
+
+                <div class = "line-article-link-table"></div>
+
+                <div class = "row-articles-link-table">
+                    <div class = "column-articles-table">
+                        <h3 class = "link-table-title"><a href ="#">The Weeknd on Tour.</a></h3>
+                        <div class = "author-link-table">Opinion by<a href="#"> Shane Harris </a></div>
+                    </div>
+
+                    <div class = "column-articles-table">
+                        <img class = "link-table-img" src="https://via.placeholder.com/64x64" alt="link_table_article_img">
+                    </div>
+                </div>
+
+                <div class = "line-article-link-table"></div>
+
+                <div class = "row-articles-link-table">
+                    <div class = "column-articles-table">
+                        <h3 class = "link-table-title"><a href ="#">The Weeknd on Tour.</a></h3>
+                        <div class = "author-link-table">Opinion by<a href="#"> Josh Dawsey  </a></div>
+                    </div>
+
+                    <div class = "column-articles-table">
+                        <img class = "link-table-img" src="https://via.placeholder.com/64x64" alt="link_table_article_img">
+                    </div>
+                </div>
+
+                <div class = "line-article-link-table"></div>
+
+                <div class = "row-articles-link-table">
+                    <div class = "column-articles-table">
+                        <h3 class = "link-table-title"><a href ="#">The Weeknd on Tour.</a></h3>
+                        <div class = "author-link-table">Opinion by<a href="#"> Josh Dawsey  </a></div>
+                    </div>
+
+                    <div class = "column-articles-table">
+                        <img class = "link-table-img" src="https://via.placeholder.com/64x64" alt="link_table_article_img">
+                    </div>
+                </div>
+
+                <div class = "line-article-link-table"></div>
+
+                <div class = "row-articles-link-table">
+                    <div class = "column-articles-table">
+                        <h3 class = "link-table-title"><a href ="#">The Weeknd on Tour.</a></h3>
+                        <div class = "author-link-table">Opinion by<a href="#"> Josh Dawsey  </a></div>
+                    </div>
+
+                    <div class = "column-articles-table">
+                        <img class = "link-table-img" src="https://via.placeholder.com/64x64" alt="link_table_article_img">
+                    </div>
+                </div>
+
+                <div class = "line-article-link-table"></div>
+
+                <div class = "row-articles-link-table">
+                    <div class = "column-articles-table">
+                        <h3 class = "link-table-title"><a href ="#">The Weeknd on Tour.</a></h3>
+                        <div class = "author-link-table">Opinion by<a href="#"> Josh Dawsey  </a></div>
+                    </div>
+
+                    <div class = "column-articles-table">
+                        <img class = "link-table-img" src="https://via.placeholder.com/64x64" alt="link_table_article_img">
+                    </div>
+                </div>
+
+                <div class = "line-article-link-table"></div>
+
+                <div class = "row-articles-link-table">
+                    <div class = "column-articles-table">
+                        <h3 class = "link-table-title"><a href ="#">The Weeknd on Tour.</a></h3>
+                        <div class = "author-link-table">Opinion by<a href="#"> Josh Dawsey  </a></div>
+                    </div>
+
+                    <div class = "column-articles-table">
+                        <img class = "link-table-img" src="https://via.placeholder.com/64x64" alt="link_table_article_img">
+                    </div>
+                </div>
+
+                <div class = "line-article-link-table"></div>
+
+                <div class = "row-articles-link-table">
+                    <div class = "column-articles-table">
+                        <h3 class = "link-table-title"><a href ="#">The Weeknd on Tour.</a></h3>
+                        <div class = "author-link-table">Opinion by<a href="#"> Josh Dawsey  </a></div>
+                    </div>
+
+                    <div class = "column-articles-table">
+                        <img class = "link-table-img" src="https://via.placeholder.com/64x64" alt="link_table_article_img">
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!--END OF MAIN CONTENT-->
+
+        <div class = "line-big-articles"></div>
+
+        <img class = "advertisement" src="img/advertisment-gif.gif" alt="advertisement">
+
+        <!-- Articles -->
+
+
+        <!--Type Article 1-->
+
+        <section class = "articles">
+
+            <div class = "type-article"> <a href="#"> POLITICS </a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+            </svg>
+            </div>
+
+            <div class = "row-articles">
+
+                <div class ="column-articles">
+
+                    <img class = "article-img" src="https://via.placeholder.com/628x419" alt="article_img">
+                    <p class = "caption">(Post illustration; Fox News; AP)</p>
+                    <h1 class = "main-article-title2"> <a href="#"> Dominion v. Fox is a defamation case. And a symbolic referendum on ‘alternative facts’ culture. </a></h1>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                    <ul class = "article-sub-link-list">
+                        <li class = "article-sub-link-list-item"> <a href="#">Get our Dominion v. Fox newsletter</a></li>
+                    </ul>
+
+                </div>
+
+                <div class = "line-article2"></div>
+
+                <div class ="column-articles">
+
+                    <img class = "article-img" src="https://via.placeholder.com/298x199" alt="article_img">
+                    <h4 class = "sub-article-title"> <a href ="#">With as little as seven weeks left, GOP races to ready debt ceiling bill</a></h4>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+
+                    <div class = "line-sub-article"></div>
+
+                    <img class = "article-img" src="https://via.placeholder.com/298x199" alt="article_img">
+                    <h4 class = "sub-article-title"> <a href ="#">With as little as seven weeks left, GOP races to ready debt ceiling bill</a></h4>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+
+                </div>
+
+                <div class = "line-article2"></div>
+
+                <div class ="column-articles">
+
+                    <img class = "article-img" src="https://via.placeholder.com/298x199" alt="article_img">
+                    <h4 class = "sub-article-title"> <a href ="#">With as little as seven weeks left, GOP races to ready debt ceiling bill</a></h4>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+
+                    <div class = "line-sub-article"></div>
+
+                    <img class = "article-img" src="https://via.placeholder.com/298x199" alt="article_img">
+                    <h4 class = "sub-article-title"> <a href ="#">With as little as seven weeks left, GOP races to ready debt ceiling bill</a></h4>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+        <!--Type Article 2-->
+
+
+        <section class = "articles">
+            <div class = "type-article"> <a href="#"> DON'T MISS </a></div>
+
+            <div class = "row-articles">
+
+                <div class = "column-articles">
+                    <img class = "article-img" src="https://via.placeholder.com/298x199" alt="article_img">
+                    <h3 class = "article-title"> <a href ="#">The Weeknd on Tour.</a></h3>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+                <div class ="line-article-base"></div>
+
+                <div class = "column-articles">
+                    <img class = "article-img" src="https://via.placeholder.com/298x199" alt="article_img">
+                    <h3 class = "article-title"> <a href ="#">The Weeknd on Tour.</a></h3>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+                <div class ="line-article-base"></div>
+
+                <div class = "column-articles">
+                    <img class = "article-img" src="https://via.placeholder.com/298x199" alt="article_img">
+                    <h3 class = "article-title"> <a href ="#">The Weeknd on Tour.</a></h3>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+                <div class ="line-article-base"></div>
+
+                <div class = "column-articles">
+                    <img class = "article-img" src="https://via.placeholder.com/298x199" alt="article_img">
+                    <h3 class = "article-title"> <a href ="#">The Weeknd on Tour.</a></h3>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <div class = "line-big-articles"></div>
+
+        <div class="advertisement"><img src="img/advertisment-2-gif.gif" ></div>
+
+
+        <!--Type Article 3-->
+
+        <section class = "articles">
+
+            <div class = "type-article"> <a href="#"> TAX SEASON</a></div>
+
+            <div class = "media-elements-slideshow">
+
+                <div class ="column-articles-slideshow">
+                        <img class = "article-img-slideshow" src="https://via.placeholder.com/300x200" alt="article_img">
+                        <p class = "caption"><a href="#">(Jonathan newton / The Post)</a></p>
+                        <div class ="sub-article-title"> <a href="#">The IRS is sending out $1,400 stimulus checks. Here’s how to track yours.</a></div>
+                        <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+                <div class ="column-articles-slideshow">
+                    <img class = "article-img-slideshow" src="https://via.placeholder.com/300x200" alt="article_img">
+                    <p class = "caption"><a href="#">(Jonathan newton / The Post)</a></p>
+                    <div class ="sub-article-title"> <a href="#">The IRS is sending out $1,400 stimulus checks. Here’s how to track yours.</a></div>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+                <div class ="column-articles-slideshow">
+                    <img class = "article-img-slideshow" src="https://via.placeholder.com/300x200" alt="article_img">
+                    <p class = "caption"><a href="#">(Jonathan newton / The Post)</a></p>
+                    <div class ="sub-article-title"> <a href="#">The IRS is sending out $1,400 stimulus checks. Here’s how to track yours.</a></div>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+                <div class ="column-articles-slideshow">
+                    <img class = "article-img-slideshow" src="https://via.placeholder.com/300x200" alt="article_img">
+                    <p class = "caption"><a href="#">(Jonathan newton / The Post)</a></p>
+                    <div class ="sub-article-title"> <a href="#">The IRS is sending out $1,400 stimulus checks. Here’s how to track yours.</a></div>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+                <div class ="column-articles-slideshow">
+                    <img class = "article-img-slideshow" src="https://via.placeholder.com/300x200" alt="article_img">
+                    <p class = "caption"><a href="#">(Jonathan newton / The Post)</a></p>
+                    <div class ="sub-article-title"> <a href="#">The IRS is sending out $1,400 stimulus checks. Here’s how to track yours.</a></div>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+                <div class ="column-articles-slideshow">
+                    <img class = "article-img-slideshow" src="https://via.placeholder.com/300x200" alt="article_img">
+                    <p class = "caption"><a href="#">(Jonathan newton / The Post)</a></p>
+                    <div class ="sub-article-title"> <a href="#">The IRS is sending out $1,400 stimulus checks. Here’s how to track yours.</a></div>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+                <div class ="column-articles-slideshow">
+                    <img class = "article-img-slideshow" src="https://via.placeholder.com/300x200" alt="article_img">
+                    <p class = "caption"><a href="#">(Jonathan newton / The Post)</a></p>
+                    <div class ="sub-article-title"> <a href="#">The IRS is sending out $1,400 stimulus checks. Here’s how to track yours.</a></div>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+                <div class ="column-articles-slideshow">
+                    <img class = "article-img-slideshow" src="https://via.placeholder.com/300x200" alt="article_img">
+                    <p class = "caption"><a href="#">(Jonathan newton / The Post)</a></p>
+                    <div class ="sub-article-title"> <a href="#">The IRS is sending out $1,400 stimulus checks. Here’s how to track yours.</a></div>
+                    <div class = "author">Opinion by<a href="#"> Carol D. Leonnig</a></div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!--Type Article 4-->
+
+        <section class = "articles">
+            <div class = "type-article"></div>
+
+            <div class = "row-articles-tips-and-games">
+
+                <div class = "article-title-tips-and-games"><a href="#"><p><b>Listen:</b> Fox News on trial</p></a></div>
+                <img class = "article-img-tips-and-games" src="https://via.placeholder.com/64x64" alt="article_img">
+
+                <div class ="line-article-tips-and-games"></div>
+
+                <div class = "article-title-tips-and-games"><a href="#"><p><b>Listen:</b> Fox News on trial</p></a></div>
+                <img class = "article-img-tips-and-games" src="https://via.placeholder.com/64x64" alt="article_img">
+
+                <div class ="line-article-tips-and-games"></div>
+
+                <div class = "article-title-tips-and-games"><a href="#"><p><b>Listen:</b> Fox News on trial</p></a></div>
+                <img class = "article-img-tips-and-games" src="https://via.placeholder.com/64x64" alt="article_img">
+
+                <div class ="line-article-tips-and-games"></div>
+
+                <div class = "article-title-tips-and-games"><a href="#"><p><b>Listen:</b> Fox News on trial</p></a></div>
+                <img class = "article-img-tips-and-games" src="https://via.placeholder.com/64x64" alt="article_img">
+
+
+
+
+            </div>
+        </section>
+
+        <div class="line-big-articles"></div>
+
+        <!--Type Article 5-->
+
+            <section class = "articles">
+                <div class = "row-articles">
+                    <div class="column-articles">
+
+                        <div class = "type-article"> <a href="#"> UPCOMING LIVE EVENTS </a></div>
+                        <div class = "small-title-sub-articles"><a href="#">Reader Q&A</a></div>
+                        <div class = "article-title-tips-and-games"><a href="#"><p>Get to know me! Chat with Michael Blackmon, The Post’s comments editor.</p></a></div>
+                        <div class = "small-caption"> Monday, April 17, at 10:00 a.m. GMT-4</div>
+
+                        <div class = "line-sub-article"></div>
+
+                        <div class = "small-title-sub-articles"><a href="#">Reader Q&A</a> </div>
+                        <h4 class = "article-title-tips-and-games"><a href="#"><p>Get to know me! Chat with Michael Blackmon, The Post’s comments editor.</p></a></h4>
+                        <div class = "small-caption"> Monday, April 17, at 10:00 a.m. GMT-4</div>
+
+                    </div>
+
+
+                    <div class ="line-article-base"></div>
+
+
+                    <div class = "column-articles">
+
+                        <div class = "type-article"> <a href="#"> HAPPENING NOW </a></div>
+                        <div class = "row-articles">
+                            <div class = "column-articles">
+                                <h3 class = "article-title"> <a href ="#">Get to know me! Chat with Michael Blackmon, The Post’s comments editor.</a></h3>
+                                <div class = "author">By<a href="#"> Carol D. Leonnig</a> - 24 minutes ago</div>
+                            </div>
+
+                            <div class = "column-articles">
+
+                                <img class = "article-img" src="https://via.placeholder.com/298x199" alt="article_img">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+        <!--Last Article-->
+
+        <section class = "last-articles">
+            <div class = "type-article"> <a href="#"> DIVERSIONS </a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" focusable="false" role="img" class="wpds-c-dpvDiz " width="16" height="16"><path d="m6 12.62-.71-.71L9.25 8 5.33 4.09 6 3.38 10.67 8Z"></path>
+            </svg>
+            </div>
+            <div id="last-links">
+                <a class = "diversions-links" href="#"><i class="bx bx-message"></i> Comics</a>
+                <a class = "diversions-links" href="#"><i class="bx bx-message"></i> Crosswords</a>
+                <a class = "diversions-links" href="#"><i class="bx bx-message"></i> Quiz</a>
+                <a class = "diversions-links" href="#"><i class="bx bx-message"></i> Mah Jongg</a>
+                <a class = "diversions-links" href="#"><i class="bx bx-message"></i> Sudoku</a>
+                <a class = "diversions-links" href="#"><i class="bx bx-message"></i> Wordwipe</a>
+                <a class = "diversions-links" href="#"><i class="bx bx-message"></i> Horoscopes</a>
+                <a class = "diversions-links" href="#"><i class="bx bx-message"></i> Solitaire</a>
+            </div>
+
+        </section>
+
+        <div class="line-big-articles"></div>
+
+        <!-- Footer -->
+
+
+
+        <section class = "footer">
+            <div class ="footer-links">Company
+            <ul>
+                <li><a href="#">About the Post</a> </li>
+                <li><a href="#">Newsroom Policies & Standards</a> </li>
+                <li><a href="#">Diversity and inclusion</a> </li>
+                <li><a href="#">Careers</a> </li>
+                <li><a href="#">Media & Community Relations</a> </li>
+                <li><a href="#">WP Creative Group</a> </li>
+                <li><a href="#">Accessibility Statement</a> </li>
+            </ul>
+            </div>
+            <div class ="footer-links">Get The Post
+                <ul>
+                    <li><a href="#">Become a Subscriber</a> </li>
+                    <li><a href="#">Gift Subscriptions</a> </li>
+                    <li><a href="#">Mobile & Apps</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                </ul>
+            </div>
+            <div class ="footer-links">Contact us
+                <ul>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                </ul>
+            </div>
+            <div class ="footer-links">Terms of Use
+                <ul>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                    <li><a href="#">Careers</a> </li>
+                </ul>
+            </div>
+        </section>
+
+
+
+    </div>
+
+        <!--Copyrigth-->
+
+    <div class="line-big-articles"></div>
+
+        <div id="copyright"><a href="#">washingtonpost.com </a> © 1996-2023 The Washington Post </div>
+    </body>
+
+
+</html>
